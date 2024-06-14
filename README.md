@@ -11,6 +11,7 @@ This project implements several process scheduling algorithms in Python. The goa
     - [PriorityQueue](#priorityqueue)
     - [Process](#process)
     - [Scheduler](#scheduler)
+5. [Setup and Installation](#Setup-and-Installation)
 
 ## Introduction
 
@@ -91,4 +92,18 @@ The `Scheduler` module contains the following functions to simulate the differen
 - `replace_process_RR(time, ready_queue, running_process)`: Replaces the currently running process in RR scheduling.
 - `replace_process_PP(time, ready_queue, running_process)`: Replaces the currently running process in PP scheduling.
 - `handle_priority(time, ready_queue)`: Updates priorities of processes in the ready queue based on a time-triggered condition.
+
+## Setup and Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yazan6546/Process-Scheduling-Algorithms-Using-Python.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd Process-Scheduling-Algorithms-Using-Python
+```
+
+
 

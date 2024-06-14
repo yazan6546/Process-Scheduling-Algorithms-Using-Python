@@ -11,11 +11,6 @@ This project implements several process scheduling algorithms in Python. The goa
     - [PriorityQueue](#priorityqueue)
     - [Process](#process)
     - [Scheduler](#scheduler)
-5. [Usage](#usage)
-6. [Setup and Installation](#setup-and-installation)
-7. [Examples](#examples)
-8. [Contributing](#contributing)
-9. [License](#license)
 
 ## Introduction
 
@@ -80,11 +75,20 @@ A class representing a process. The `Process` class includes attributes such as:
 
 ### Scheduler
 
-The `Scheduler` class contains methods to simulate the different scheduling algorithms. Key methods include:
+The `Scheduler` module contains the following functions to simulate the different scheduling algorithms:
 
-- `fcfs()`: Implements First Come First Served scheduling.
-- `sjf()`: Implements Shortest Job First scheduling.
-- `srtf()`: Implements Shortest Remaining Time First scheduling.
-- `round_robin()`: Implements Round Robin scheduling.
-- `preemptive_priority()`: Implements Preemptive Priority Scheduling with aging.
-- `non_preemptive_priority()`: Implements Non-preemptive Priority Scheduling with aging.
+- `main()`: The main function to interactively run scheduling algorithms and display results.
+- `show_menu()`: Displays the menu of available scheduling algorithms.
+- `run_algorithm_FCFS(processes, time_limit)`: Runs the First Come, First Served (FCFS) scheduling algorithm.
+- `run_algorithm_SJF(processes, time_limit)`: Runs the Shortest Job First (SJF) scheduling algorithm.
+- `run_algorithm_SRTF(processes, time_limit)`: Runs the Shortest Remaining Time First (SRTF) scheduling algorithm.
+- `run_algorithm_RR(processes, time_limit)`: Runs the Round Robin (RR) scheduling algorithm.
+- `run_algorithm_PP(processes, is_preemptive, time_limit)`: Runs the preemptive or non-preemptive Priority with aging (PP) scheduling algorithm.
+- `handle_arrival(processes, time, ready_queue)`: Handles the arrival of processes at a specific time.
+- `handle_comeback(time, waiting_queue, ready_queue)`: Handles processes that are coming back to the ready queue after a comeback time.
+- `print_gantt_chart(time, process)`: Prints the Gantt chart.
+- `replace_process_SRTF(time, ready_queue, running_process)`: Replaces the currently running process in SRTF scheduling.
+- `replace_process_RR(time, ready_queue, running_process)`: Replaces the currently running process in RR scheduling.
+- `replace_process_PP(time, ready_queue, running_process)`: Replaces the currently running process in PP scheduling.
+- `handle_priority(time, ready_queue)`: Updates priorities of processes in the ready queue based on a time-triggered condition.
+

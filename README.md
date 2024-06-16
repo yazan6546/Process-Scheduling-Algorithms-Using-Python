@@ -1,6 +1,6 @@
 # Process Scheduling Algorithms
 
-This project implements several process scheduling algorithms in Python. The goal is to simulate and understand the behavior of different scheduling methods in an operating system context
+This project implements several process scheduling algorithms in Python. The goal is to simulate and understand the behavior of different scheduling methods in an operating system context.
 
 ## Table of Contents
 
